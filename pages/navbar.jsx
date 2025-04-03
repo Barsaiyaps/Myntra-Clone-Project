@@ -59,7 +59,7 @@ const Navbar = () => {
         <Menu.Positioner>
           <Menu.Content>
            <Link to={"/addProduct"}> <Menu.Item value="add-product">ADD PRODUCT</Menu.Item></Link>
-            <Menu.Item value="dashboard">DASHBOARD...</Menu.Item>
+           <Link to={"/dashboard"}> <Menu.Item value="dashboard">DASHBOARD...</Menu.Item></Link>
             <Menu.Item value="new-win">New Window</Menu.Item>
             <Menu.Item value="open-file">Open File...</Menu.Item>
           </Menu.Content>
