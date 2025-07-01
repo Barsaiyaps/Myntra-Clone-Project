@@ -9,7 +9,7 @@ function Home() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetchData();
+    
   }, []);
 
   async function fetchData() {
@@ -29,29 +29,8 @@ function Home() {
     <Box p={6}>
 
     <Slider />
-      {/* Loading State */}
-      {loading && (
-        <Flex justify="center" align="center" my={6}>
-          <Spinner size="xl" />
-        </Flex>
-      )}
-
-      {/* Reload Button */}
-      <Flex justify="center" mb={6}>
-        <Button colorScheme="teal" onClick={fetchData} isLoading={loading} loadingText="Loading...">
-          Reload Products
-        </Button>
-      </Flex>
-
-      {/* No Products Message */}
-      {products.length === 0 && !loading && (
-        <Text textAlign="center" fontSize="xl" fontWeight="bold">
-          No products available.
-        </Text>
-      )}
-
-      {/* Product Grid */}
-      <Grid templateColumns={{ base: "1fr", sm: "1fr 1fr", md: "1fr 1fr 1fr", lg: "1fr 1fr 1fr 1fr" }} gap={6}>
+      
+      <Grid templateColumns={{ base: "1fr", sm: "1fr 1fr", md: "1fr 1fr 1fr", lg: "1fr 1fr 1fr 1fr" }} gap={6} margin={"20px"}>
         {products.map((product) => (
           <Box key={product._id} borderWidth="1px" borderRadius="lg" overflow="hidden" boxShadow="md">
             {/* Product Image */}
@@ -75,6 +54,13 @@ function Home() {
           </Box>
         ))}
       </Grid>
+
+      {/* Reload Button */}
+      <Flex justify="center" mb={6} margin={"10px"}>
+        <Button colorScheme="teal" onClick={fetchData} isLoading={loading} loadingText="Loading...">
+          Reload Products
+        </Button>
+      </Flex>
 
       <Slider2 />
     </Box>

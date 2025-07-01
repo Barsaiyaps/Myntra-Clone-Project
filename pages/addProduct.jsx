@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Box, Text, Input, Textarea, Button, VStack } from "@chakra-ui/react";
 
 const AddProduct = () => {
-  // State to store form data
+
   const [product, setProduct] = useState({
     title: "",
     price: "",
@@ -11,13 +11,11 @@ const AddProduct = () => {
     image: "",
   });
 
-  // Handle input changes dynamically
   const handleChange = (e) => {
     const { name, value } = e.target;
     setProduct((prev) => ({ ...prev, [name]: value }));
   };
 
-  // Handle form submission (Replace with actual API call)
   const handleSubmit = async(e) => {
     e.preventDefault();
     await addProduct(product); 
@@ -27,7 +25,7 @@ const AddProduct = () => {
   const addProduct = async (productData) => {
     try {
       const response = await fetch("https://user-product-order01.onrender.com/myapp/add-product", {
-        method: "POST",  // Fixed method type
+        method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
