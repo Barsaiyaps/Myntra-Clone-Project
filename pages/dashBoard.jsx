@@ -30,8 +30,7 @@ function Dashboard() {
         method: "DELETE",
       });
       if (!response.ok) throw new Error("Failed to delete product");
-
-      // Remove deleted product from state
+      
       setAllProducts((prevProducts) => prevProducts.filter((product) => product._id !== id));
     } catch (err) {
       console.error("Error deleting product:", err);

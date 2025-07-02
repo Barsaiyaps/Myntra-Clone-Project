@@ -24,6 +24,7 @@ const AddProduct = () => {
 
   const addProduct = async (productData) => {
     try {
+      console.log(productData)
       const response = await fetch("https://user-product-order01.onrender.com/myapp/add-product", {
         method: "POST",
         headers: {
@@ -56,7 +57,7 @@ const AddProduct = () => {
           <Input placeholder="Enter the Price" name="price" type="number" value={product.price} onChange={handleChange} />
           <Textarea placeholder="Description" name="description" value={product.description} onChange={handleChange} />
           <Input placeholder="Category" name="category" value={product.category} onChange={handleChange} />
-          <Input placeholder="Enter Image URL" name="imageLink" value={product.imageLink} onChange={handleChange} />
+          <Input placeholder="Enter Image URL" name="image" value={product.image} onChange={handleChange} />
           <Button type="submit" colorScheme="blue" w="full">
             Add Product
           </Button>

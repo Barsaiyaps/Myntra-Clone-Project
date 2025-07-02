@@ -1,12 +1,30 @@
-# React + Vite
+# 🛍️ Myntra Clone - MERN Stack Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **Myntra Clone** web application built using the **MERN stack (MongoDB, Express.js, React.js, Node.js)**. The app features a modern e-commerce UI with product listings, a basic admin dashboard, and functionality to add new products. It also includes product carousels for showcasing the latest releases.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend (Vercel)**: [https://myntra-clone-project-umber.vercel.app/](https://myntra-clone-project-umber.vercel.app/)
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React.js, CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Deployment**: Vercel (Frontend), Render(Backend)
+
+## ✨ Features
+
+### 🛒 User Side:
+- Home page with multiple **product carousels** highlighting latest releases
+- **Product page** with detailed view
+- Responsive UI inspired by **Myntra**
+- Product listing based on categories (optional: filters or sorting)
+
+### 🔧 Admin Side:
+- **Basic admin dashboard**
+- **Add Product** form for adding new products to the catalog
+- Admin routes protected via backend logic (optional)
+
+## 📂 Project Structure
+
