@@ -26,3 +26,9 @@ This is a **Myntra Clone** web application built using the **MERN stack (MongoDB
 - **Add Product** form for adding new products to the catalog
 - Admin routes protected via backend logic (optional)
 
+## Future Improvements
+Add user authentication (JWT)
+Payment gateway integration (e.g., Razorpay or Stripe)
+Product filters, search, and sorting
+Order management and cart system
+Enhanced admin panel with analytics
