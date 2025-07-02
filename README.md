@@ -26,5 +26,3 @@ This is a **Myntra Clone** web application built using the **MERN stack (MongoDB
 - **Add Product** form for adding new products to the catalog
 - Admin routes protected via backend logic (optional)
 
-## 📂 Project Structure
-
